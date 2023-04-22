@@ -7,14 +7,18 @@ $('form').validate({
             required: true
         },
         cpf: {
-            required: true
+            required:true, 
+            cpf: true
         },
         cep: {
-            required: true
-        },
+            required: true,
+            cep:true
+        }
+    },
         messages: {
             telefone: 'Por favor, insira o telefone'
         },
+        
 
         submitHandler: function(form) {
             console.log (form)
@@ -26,10 +30,5 @@ $('form').validate({
             }
             }
 })
-
-
-
-
-
 
 
